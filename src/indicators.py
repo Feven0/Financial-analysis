@@ -1,6 +1,5 @@
 import talib
 import pandas as pd
-import pynance as pn
 
 def calculate_moving_averages(df, column='Close', periods=[20, 50]):
     """
@@ -28,8 +27,6 @@ def calculate_macd(df, column='Close'):
 
 def get_pynance_metrics(df):
     """
-    Calculates financial metrics using pynance.
-    Note: PyNance usually expects a Series with DatetimeIndex.
+    Placeholder for pynance metrics.
     """
-    # Example: Calculate various metrics if applicable
     pass

@@ -22,5 +22,5 @@ def aggregate_daily_sentiment(df):
     Aggregates sentiment scores by date.
     """
     # Ensure date is just date
-    df['date_only'] = pd.to_datetime(df['date']).dt.date
+    df['date_only'] = pd.to_datetime(df['date'], format='mixed', utc=True).dt.date
     return df.groupby('date_only')['sentiment'].mean().reset_index()

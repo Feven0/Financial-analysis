@@ -25,7 +25,7 @@ def analyze_publication_dates(df):
     """
     Analyzes publication dates and adds date-related columns.
     """
-    df['date'] = pd.to_datetime(df['date'], errors='coerce')
+    df['date'] = pd.to_datetime(df['date'], errors='coerce', format='mixed', utc=True)
     df = df.dropna(subset=['date'])
     return df
 
