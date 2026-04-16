@@ -6,3 +6,5 @@ yfinance
 scipy
 jupyter
 python-dotenv
+TA-Lib
+pynance
